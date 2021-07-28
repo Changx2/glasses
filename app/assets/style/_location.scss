@@ -1,0 +1,144 @@
+.location {
+  padding-top: 96px;
+  padding-bottom: 160px;
+  @include pad {
+    padding-top: 60px;
+    padding-bottom: 96px;
+  }
+  @include mobile {
+    padding-top: 28px;
+    padding-bottom: 56px;
+  }
+  h2 {
+    font-size: $font-xxl;
+    font-weight: bold;
+    border-left: 8px solid $primary-color;
+    padding-left: 16px;
+    margin-bottom: 60px;
+    @include pad {
+      border-left: 4px solid $primary-color;
+      margin-bottom: 40px;
+    }
+    @include mobile {
+      font-size: 28px;
+      margin-bottom: 24px;
+      padding-left: 8px;
+    }
+  }
+}
+.location-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  @include pad {
+    margin-bottom: 24px;
+  }
+  @include mobile {
+    margin-bottom: 20px;
+  }
+  label {
+    font-size: $font-lg;
+    margin-right: 20px;
+    @include pad {
+      font-size: $font-base;
+    }
+    @include mobile {
+      font-size: $font-sm;
+      margin-right: 12px;
+    }
+  }
+  select {
+    width: 324px;
+    padding: 10px 20px;
+    border: 1px solid #ced4da;
+    font-size: 18px;
+    color: #495057;
+    @include pad {
+      width: 237px;
+      padding: 8px 16px;
+      font-size: $font-base;
+    }
+    @include mobile {
+      width: 277px;
+      padding: 10px 16px;
+      font-size: $font-sm;
+    }
+  }
+}
+.location-cards {
+  display: flex;
+  flex-wrap: wrap;
+  .location-cards-item {
+    width: calc(100% / 3 - 2%);
+    margin: 0 1% 32px;
+    @include pad {
+      width: calc(100% / 2 - 4%);
+      margin: 0 2% 20px;
+    }
+    @include mobile {
+      width: 100%;
+      margin: 0 0 16px 0;
+    }
+  }
+  .location-cards-title {
+    font-size: $font-lg;
+    color: #212529;
+    padding: 12px 24px;
+    border: 1px solid #00000020;
+    @include pad {
+      font-size: $font-base;
+      font-weight: bold;
+      padding: 8px 16px;
+    }
+  }
+  .location-cards-body {
+    border: 1px solid #00000020;
+    border-top: 0;
+    padding: 24px 16px;
+    li {
+      display: flex;
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+    a {
+      font-size: $font-md;
+      color: #212529;
+      @include pad {
+        font-size: $font-sm;
+      }
+    }
+    p {
+      font-size: $font-md;
+      color: #212529;
+      @include pad {
+        font-size: $font-sm;
+      }
+    }
+  }
+}
+
+.location-btn {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 19px;
+  color: $light-color;
+  padding: 20px 0;
+  display: block;
+  border: 1px solid #00000020;
+  background: $dark-color;
+  &:hover {
+    background: $primary-color;
+  }
+  @include pad {
+    font-size: $font-sm;
+    padding: 16px 0;
+  }
+}

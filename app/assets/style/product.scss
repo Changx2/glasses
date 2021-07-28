@@ -1,0 +1,150 @@
+.productNav {
+  display: flex;
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 8px solid transparent;
+    &:hover,
+    &.active {
+      border-bottom: 8px solid $primary-color;
+    }
+    @include pad {
+      padding: 14px 0;
+    }
+    @include mobile {
+      padding: 6px 0;
+    }
+  }
+  &-item {
+    width: calc(100% / 3);
+    border: 1px solid #dcdcdc;
+  }
+  &-icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+    @include pad {
+      width: 32px;
+      height: 32px;
+    }
+    @include mobile {
+      width: 16px;
+      height: 16px;
+      margin-right: 2px;
+    }
+  }
+  &-title {
+    color: $dark-color;
+    font-size: $font-xl;
+    font-weight: 500;
+    @include pad {
+      font-size: $font-lg;
+    }
+    @include mobile {
+      font-size: $font-sm;
+    }
+  }
+}
+.productBanner {
+  display: flex;
+}
+.product {
+  padding-top: 80px;
+  padding-bottom: 160px;
+  @include pad {
+    padding-top: 56px;
+    padding-bottom: 96px;
+  }
+  @include mobile {
+    padding-top: 32px;
+    padding-bottom: 56px;
+  }
+  &-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+    @include pad {
+      font-size: $font-xl;
+    }
+    @include mobile {
+      font-size: $font-md;
+    }
+  }
+  &-subtitle {
+    text-align: center;
+    font-size: $font-xl;
+    margin-bottom: 40px;
+    @include pad {
+      font-size: $font-lg;
+      margin-bottom: 32px;
+    }
+    @include mobile {
+      font-size: $font-base;
+      margin-bottom: 20px;
+    }
+  }
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &-item {
+    width: calc((100% - 90px) / 4);
+    margin-bottom: 104px;
+    @include pad {
+      width: calc((100% - 30px) / 2);
+      margin-bottom: 72px;
+    }
+    @include mobile {
+      width: 100%;
+      margin-bottom: 32px;
+    }
+  }
+  &-img {
+    width: 100%;
+  }
+  &-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-number {
+    font-size: $font-lg;
+    @include pad {
+      font-size: $font-lg;
+    }
+    @include mobile {
+      font-size: $font-base;
+    }
+  }
+  &-price {
+    font-size: $font-lg;
+    font-weight: 500;
+    color: $primary-color;
+    @include pad {
+      font-size: $font-lg;
+    }
+    @include mobile {
+      font-size: $font-base;
+    }
+  }
+  &-colorList {
+    display: flex;
+    &-color {
+      width: 24px;
+      height: 24px;
+      display: block;
+      border-radius: 4px;
+      background-color: #5f3e2d;
+      margin-right: 8px;
+      &:nth-child(2) {
+        background-color: #b75929;
+      }
+      @include mobile {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

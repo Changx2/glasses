@@ -1,0 +1,74 @@
+.faq {
+  padding-top: 96px;
+  padding-bottom: 160px;
+  @include pad {
+    padding-top: 60px;
+    padding-bottom: 96px;
+  }
+  @include mobile {
+    padding-top: 28px;
+    padding-bottom: 56px;
+  }
+  h2 {
+    font-size: $font-xxl;
+    font-weight: bold;
+    border-left: 8px solid $primary-color;
+    padding-left: 16px;
+    margin-bottom: 60px;
+    @include pad {
+      border-left: 4px solid $primary-color;
+      margin-bottom: 40px;
+    }
+    @include mobile {
+      font-size: 28px;
+      margin-bottom: 24px;
+      padding-left: 8px;
+    }
+  }
+  h3 {
+    font-size: $font-xl;
+    margin-bottom: 36px;
+    font-weight: bold;
+    @include pad {
+      margin-bottom: 32px;
+    }
+    @include mobile {
+      font-size: $font-md;
+      font-weight: normal;
+      margin-bottom: 24px;
+    }
+  }
+}
+.faq-list {
+  li {
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include pad {
+      margin-bottom: 24px;
+    }
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+  h4 {
+    font-size: $font-md;
+    font-weight: bold;
+    @include mobile {
+      font-size: $font-base;
+    }
+  }
+  p {
+    margin-top: 16px;
+    margin-left: 95px;
+    @include pad {
+      margin-left: 60px;
+    }
+    @include mobile {
+      margin-top: 8px;
+      margin-left: 0;
+      font-size: $font-sm;
+    }
+  }
+}
