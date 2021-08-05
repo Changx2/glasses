@@ -19,28 +19,28 @@ engine: ejs
         <img
           src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-dollar.svg"
           alt="icon-glasses" width="84" height="84">
-        <h3>單一價格</h3>
+        <h3 class="benefit-title">單一價格</h3>
         <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
       </li>
       <li>
         <img
           src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-clock.svg"
           width="84" height="84" alt="icon-glasses">
-        <h3>20 分鐘即可取件</h3>
+        <h3 class="benefit-title">20 分鐘即可取件</h3>
         <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
       </li>
       <li>
         <img
           src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-heart.svg"
           width="84" height="84" alt="icon-glasses">
-        <h3>安心售後服務</h3>
+        <h3 class="benefit-title">安心售後服務</h3>
         <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
       </li>
       <li>
         <img
           src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-glasses.svg"
           width="84" height="84" alt="icon-glasses">
-        <h3>關於鏡片</h3>
+        <h3 class="benefit-title">關於鏡片</h3>
         <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
       </li>
     </ul>
@@ -53,12 +53,12 @@ engine: ejs
           <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-1.png"
             alt="product-1">
         </div>
-        <h3><img
+        <h3 class="classic-title"><img
             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-diamond.svg"
             alt="icon_diamond">OPTICAL</h3>
       </li>
       <li class="classic-list-reverse">
-        <h3><img
+        <h3 class="classic-title"><img
             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-sun.svg"
             alt="icon-sun">SUNGLASSES</h3>
         <div class="classic-img">
@@ -71,7 +71,7 @@ engine: ejs
           <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-3.png"
             alt="product-3">
         </div>
-        <h3>
+        <h3 class="classic-title">
           <img
             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-thunder.svg"
             alt="icon-thunder">FUNCTIONAL
@@ -82,15 +82,15 @@ engine: ejs
   <section class="co-branding">
     <h2>聯名設計鏡框</h2>
     <ul class="co-branding-list container">
-      <li>
+      <li class="co-branding-item">
         <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png"
           alt="Double A+">
-        <span>Double A+</span>
+        <h3 class="co-branding-title">Double A+</h3>
       </li>
-      <li>
+      <li class="co-branding-item">
         <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-9.png"
           alt="YOUTH">
-        <span>YOUTH</span>
+        <h3 class="co-branding-title">YOUTH</h3>
       </li>
     </ul>
   </section>
@@ -155,10 +155,8 @@ engine: ejs
           <textarea id="feedback" placeholder="請輸入您的意見"></textarea>
         </div>
         <div class="contact-agree">
-          <input type="checkbox">
-          <p>
-            我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
-          </p>
+          <input type="checkbox" id="agree">
+          <label for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
         </div>
         <div class="submit">
           <a href="#" class="btn">確認送出</a>

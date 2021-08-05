@@ -98,8 +98,13 @@
     li {
       display: flex;
       margin-bottom: 8px;
+      font-size: $font-md;
+      color: #212529;
       &:last-child {
         margin-bottom: 0;
+      }
+      @include pad {
+        font-size: $font-sm;
       }
     }
     img {
@@ -108,13 +113,6 @@
       margin-right: 8px;
     }
     a {
-      font-size: $font-md;
-      color: #212529;
-      @include pad {
-        font-size: $font-sm;
-      }
-    }
-    p {
       font-size: $font-md;
       color: #212529;
       @include pad {

@@ -5,6 +5,7 @@
   height: 840px;
   @include mobile {
     height: 394px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png);
   }
   .header-content {
     display: flex;
@@ -98,7 +99,7 @@
       img {
         text-align: center;
       }
-      h3 {
+      .benefit-title {
         font-size: $font-lg;
         color: $secondary-color;
         font-weight: bold;
@@ -134,7 +135,7 @@
     @include pad {
       position: relative;
     }
-    h3 {
+    .classic-title {
       color: $primary-color;
       font-size: $font-xxl;
       font-weight: 900;
@@ -170,7 +171,7 @@
       flex-direction: row-reverse;
       justify-content: flex-end;
     }
-    h3 {
+    .classic-title {
       margin-right: 30px;
     }
   }
@@ -215,39 +216,39 @@
     @include mobile {
       flex-wrap: wrap;
     }
-    li {
-      width: 48%;
-      position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(255, 255, 255, 0.5);
-      }
-      @include mobile {
-        width: 100%;
-        margin-bottom: 16px;
-        margin-right: 0;
-        &:nth-child(2) {
-          margin-bottom: 0;
-        }
-      }
-      span {
-        color: $primary-color;
-        font-size: 72px;
-        font-weight: bold;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        white-space: nowrap;
-        @include pad {
-          font-size: $font-xl;
-        }
-      }
+  }
+}
+.co-branding-item {
+  width: 48%;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  @include mobile {
+    width: 100%;
+    margin-bottom: 16px;
+    margin-right: 0;
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+  }
+  .co-branding-title {
+    color: $primary-color;
+    font-size: 72px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    @include pad {
+      font-size: $font-xl;
     }
   }
 }
@@ -304,29 +305,29 @@
           margin-bottom: 16px;
         }
       }
-      .recommend-card-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-grow: 1;
-        height: auto;
-        padding: 16px;
-        .recommend-card-name {
-          font-size: $font-sm;
-          font-weight: 500;
-          color: #212529;
-          margin-bottom: 8px;
-        }
-        .recommend-card-text {
-          color: #212529;
-          margin-bottom: 52px;
-        }
-        .recommend-card-date {
-          font-size: $font-sm;
-          color: #707070;
-        }
-      }
     }
+  }
+}
+.recommend-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: auto;
+  padding: 16px;
+  .recommend-card-name {
+    font-size: $font-sm;
+    font-weight: 500;
+    color: #212529;
+    margin-bottom: 8px;
+  }
+  .recommend-card-text {
+    color: #212529;
+    margin-bottom: 52px;
+  }
+  .recommend-card-date {
+    font-size: $font-sm;
+    color: #707070;
   }
 }
 .contact {
@@ -416,16 +417,17 @@
         text-align: center;
         background-color: $primary-color;
         color: $light-color;
-        padding: 16px 143px;
+        width: 50%;
+        padding: 16px 0;
         &:hover {
           background-color: $secondary-color;
         }
         @include pad {
           font-size: $font-sm;
-          padding: 10px 77px;
+          padding: 10px 0;
         }
         @include mobile {
-          padding: 8px 54px;
+          padding: 8px 0;
         }
       }
     }

@@ -49,7 +49,17 @@
 }
 .productBanner {
   display: flex;
+  .productBanner-img {
+    width: 50%;
+    height: 304px;
+    background-position: center;
+    background-size: cover;
+    @include mobile {
+      height: 148px;
+    }
+  }
 }
+
 .product {
   padding-top: 80px;
   padding-bottom: 160px;
@@ -136,15 +146,17 @@
       height: 24px;
       display: block;
       border-radius: 4px;
-      background-color: #5f3e2d;
       margin-right: 8px;
-      &:nth-child(2) {
-        background-color: #b75929;
-      }
       @include mobile {
         width: 16px;
         height: 16px;
       }
     }
   }
+}
+.color-second {
+  background-color: #5f3e2d;
+}
+.color-first {
+  background-color: #b75929;
 }
